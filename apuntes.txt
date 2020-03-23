@@ -1,0 +1,29 @@
+HTML: Es un lenguaje de marcado usado para decirle a tu navegador cómo estructurar
+las páginas web que visitas. No es un lenguaje de programación.
+
+CSS: Es un lenguaje que nos permite crear páginas web con un diseño agradable para los usuarios.
+Tampoco es un lenguaje de programación.
+
+
+https://htmlreference.io/
+
+https://cssreference.io/
+
+DOM
+Document object model
+El navegador transforma las etiquetas en objetos que son entendibles para el navegador.
+
+CSSOM
+Este mismo agarra el código de css y lo transforma en un lenguaje entendible para el navegador
+
+RENDER TREE
+Este mismo es un árbol en el que el DOM y el CSSOM juntos para renderizar el proceso que creamos en el codigo.
+
+Como el navegador lee el código
+1- El navegador transforma el código en bytes
+2- teniendo el código en bytes este los transforma en caracteres y este se da cuenta leyendo el meta charset
+3- Tokens, este los transforma en elementos html y los ordena
+4- Transforma estos en Nodos y estos son los que entiende el.
+y clasifica los objetos y los contenidos
+5- El dom es el árbol de los elementos que se forma con todos estos pasos.
+
