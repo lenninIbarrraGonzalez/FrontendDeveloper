@@ -39,3 +39,111 @@ para nuestros elementos: <etiqueta atributo=""valor del atributo"">. Por ejemplo
 
 También existen elementos vacíos. Estos elementos no tienen contenido ni etiqueta de cierre, solo etiqueta de apertura
 y atributos. Por ejemplo: <img src=""puppy.png"" alt=""mi mascota"">.
+
+La importancia del código semántico
+Es importante que como desarrolladores tengamos claro el significado de escribir código. Debes ser consciente de que la manera en la que codeas tenga sentido.
+
+La semántica HTML no es más que darle sentido y estructura a lo que estas escribiendo. Muy importante para el navegador. No todos los elementos deberían ser un div.
+
+Tipos de errores en HTML, debugging y servicio de validación de etiquetas
+Errores sintácticos: Son errores de escritura en el código y evitan que el programa funcione. Pueden ser errores de tipado.
+
+Errores lógicos: En estos la sintaxis es correcta, pero el código no hace lo que debería. El programa funciona, pero de forma incorrecta.
+
+
+validar errores en un archivo Html
+https://validator.w3.org/
+
+Anatomía de una declaración CSS: Selectores, Propiedades y Valores
+Nuestros estilos con CSS se componen de:
+
+Selector: son la referencia a los elementos HTML que queremos estilizar. Los nombres de estas etiquetas van seguidas de una llave de apertura y otra de cierre ({}). Por ejemplo: h1 {}.
+Propiedades: son el tipo de estilo que queremos darle a nuestros elementos. Van seguidas de dos puntos (:). Las propiedades deben estar dentro de las llaves del selector que definimos anteriormente. Podemos escribir diferentes propiedades en un mismo selector. Por ejemplo: h1 { color: }.
+Valores: son el estilo que queremos que tomen nuestros elementos HTML con respecto a una propiedad. Van seguidas de un punto y coma (;). Por ejemplo: h1 { color: red; }.
+h1 {
+  color: red;
+}
+
+
+Tipos de selectores, pseudo-clases y pseudo-elementos
+*(asterisco): Es el selector universal. Las propiedades se aplicaran a todos los elementos de nuestro HTML.
+
+Tipo: Son selectores que se aplican a cierto elemento HTML en específico. Las propiedades se aplicaran a la etiqueta que queremos, por ejemplo p, body, html, div, etc.
+
+Clase: Si nuestras etiqueta de HTML tienen un atributo de class podemos usar ese valor o identificador para que los cambios en el CSS afecten únicamente a ese elemento.
+
+ID: Es similar al anterior, si la etiqueta HTML tiene un ID podemos afectar solo ese elemento.
+
+Las Pseudo-clases y Pseudo-elementos nos permiten ser aún más específicos con qué elemento o partes de nuestros elementos deben recibir los estilos.
+
+Para usarlas debemos definir el selector base (por ejemplo, p) seguido de dos puntos y la pseudo-clase que queremos estilizar (por ejemplo: p:first-child). En el caso de los pseudo-elementos debemos usar el dos puntos 2 veces (p::first-letter).
+
+/* Asterisco (universal) */
+* {
+  margin: 0;
+}
+
+/* Tipo */
+h1 {
+  color: red;
+}
+
+/* Clase */
+.saludo {
+  font-size: 2em;
+}
+
+/* ID */
+#id {
+  border-radius: 20px;
+}
+
+/* Pseudo-clases */
+p:first-child {
+  color: white;
+}
+
+p:last-child {
+  color: purple;
+}
+
+p:nth-child(2n) {
+  color: red;
+}
+
+Modelo de caja
+Todos los elementos de HTML tienen un modelo de caja y esta compuesto por cuatro elementos: contenido,
+padding, border, margin.
+
+Valores relativos y absolutos
+Los valores absolutos son, por ejemplo, centímetros, milímetros, pixeles y pulgadas. Se llaman de esta
+forma porque no tienen en cuenta a nadie más, no depende de la medida de otra unidad.
+
+Los valores relativas, llevan este nombre porque depende de otra unidad de medida o elemento. Por ejemplo,
+porcentajes, vmx, em, entre otros.
+
+Recuerda que podemos darle estilos a etiquetas HTML muy específicas indicando dónde se van a encontrar. 
+Por ejemplo: si queremos darle estilos únicamente a la imagen que está dentro del header, podemos usar 
+el selector css header img { ... }.
+
+No olvides resolver el desafío: crear tu propio header con las etiquetas y estilos que más te gusten para 
+compartirlo en la sección de discusiones.
+
+///////////Displays en CSS
+
+Todos los elementos en CSS son cuadrados o rectángulos y aparte de eso, estos elementos tienen un comportamiento que se define a través de la propiedad display. Los display más comunes y usados son: block, inline, inline-block, none, table, flex y grid
+
+
+¿Qué son y para qué nos sirven las arquitecturas CSS?
+
+objetivos
+Predecibles: si hacemos una regla esta debe cumplirse cómo se diga
+Reutilizables: que el codigo se pueda reutilizar sin necesidad de volver a copiar y pegar
+Mantenibles: si tengo 2.000 lineas de codigo, no será mantenible
+Escalable: si tenemos un archivi muy grande pero afectará el rendimiento
+Buenas practicas
+Establecer reglas (con el equipo)
+Explicar la estructura base
+Establecer estándares de codificiacion
+Evitar largas hojas de estilos
+Documentacion
