@@ -1,6 +1,5 @@
 body{
     margin: 0px;
-    
     font-family: 'Muli', sans-serif;
 }
 .header{
@@ -37,16 +36,13 @@ body{
     justify-content: space-around;
     flex-direction: column;
 }
-
 .login__container h2{
     text-align: center;
 }
-
 .login__container--form{
     display: flex;
     flex-direction: column;
 }
-
 .login__container--form label{
     font-size: 14px;
 }
@@ -57,38 +53,31 @@ body{
     justify-content: space-between;
     margin-top: 10px;
 }
-
 .login__container--remember-me a{
     color: white;
     font-size: 14px;
     text-decoration: none;
 }
-
 .login__container--remember-me a:hover{
     text-decoration: underline;
 }
-
-
 .login__container--social-media > div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
     font-size: 14px;
     margin-bottom: 10px;
+    
 } 
-
-.login__container--social-media > img{
+.login__container--social-media img{
     width: 30px;
     margin-right: 10px;
-    
-
+    vertical-align: middle;
 }
-
 .login__container--register{
     font-size: 14px;
 }
-
 .login__container--register a{
     font-size: 16px;
     color: white;
@@ -99,7 +88,6 @@ body{
 .login__container--register a:hover{
     text-decoration: underline;
 }
-
 .input{
     background-color: transparent;
     border-left: 0px;
@@ -111,12 +99,10 @@ body{
     outline: none;
     height: 50px;
 }
-
 input::placeholder{
     color: white;
     font-family: 'Muli', sans-serif;
 }
-
 .button{
     background-color: rgba(255,255,255,0.1);
     border: none;
@@ -130,7 +116,6 @@ input::placeholder{
     letter-spacing: 1px;
     margin: 10px 0px;
 }
-
 .footer{
     display: flex;
     align-items: center;
@@ -139,7 +124,6 @@ input::placeholder{
     background-color: #8f57fd;
 
 }
-
 .footer a{
     color: white;
     cursor: pointer;
@@ -147,7 +131,6 @@ input::placeholder{
     padding-left: 30px;
     text-decoration: none;
 }
-
 .footer a{
     text-decoration: underline;
 }
