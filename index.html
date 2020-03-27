@@ -1,60 +1,48 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
 </head>
 <body>
     <!-- start header  -->
     <header class="header">
         <img class="header__img" src="assets/images/Logo_AllNexus_fdevelop.png" alt="">
-        <div class="header__menu">
-            <div class="header__menu--profile">
-                <img src="assets/svg/usuario.svg" alt="logo-usuario">
-                <p>
-                    Perfil
-                </p>
-            </div>
-            <ul>
-                <li><a href="#">Cuenta</a></li>
-                <li><a href="#">Cerrar sesi&oacute;n</a></li>
-            </ul>
-        </div>
     </header>
     <!-- the end header  -->
-    <!-- start search -->
-    <section class="main">
-        <h2 class="main__title">¿Que quieres ver hoy?</h2>
-        <input class="input" type="text" placeholder="Buscar...">
-    </section>
-    <!-- the end search  -->
-    <!-- start carousel -->
-    <section class="carousel">
-        <div class="carousel__container">
-            <div class="carusel-item">
-                <img class="carousel-item__img" src="assets/images/mountain-and-sky.jpg" alt="">
-            </div>
-            <div class="carusel-item">
-                <img class="carousel-item__img" src="assets/images/climate-people-street-weather-2990616.jpg" alt="">
-                <div class="carousel-item__details">
-                    <div>
-                        <img src="assets/icons/icons8-play-64.png" alt="">
-                        <img src="assets/icons/plus-icon.png" alt="">
-                    </div>
-                    <p class="carousel-item__details--title">Titulo descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
-
+    <!-- start login  -->
+    <section class="login">
+        <section class="login__container">
+            <h2>Inicia sesi&oacute;n</h2>
+            <form action="" class="login__container--form">
+                <input type="text" class="input" placeholder="correo">
+                <input type="text" class="input" placeholder="Contraseña">
+                <button class="button">Iniciar sesi&oacute;n</button>
+                <div class="login__container--remember-me">
+                    <label>
+                        <input type="checkbox" name="" id="cbox1" value="checkbox">Recuerdame
+                    </label>
+                    <a href="/">Olvid&eacute; mi contraseña</a>
                 </div>
-           </div>
-            <div class="carusel-item">
-                <img class="carousel-item__img" src="assets/images/people-protesting-a-climate-change-3700224.jpg" alt="">
-            </div>
-        </div>
+            </form>
+            <section class="login__container--social-media">
+                <div>
+                    <img src="assets/icons/google-icon.png" alt="google">Inicia sesi&oacute;n con Google
+                    <img src="assets/icons/twitter-icon.png" alt="Twitter">Inicia sesi&oacute;n con Twitter
+                </div>
+                <p class="login__container--register">No tienes una cuenta <a href="">Registrate</a></p>
+            </section>
+        </section>
     </section>
-    <!-- the end carousel -->
-
+    <!-- the end login  -->
+    <!-- start footer  -->
+    <footer class="footer">
+        <a href="/">Terminos de uso</a>
+        <a href="/">Declaraci&oacute;n de privacidad</a>
+        <a href="/">Centro de ayudas</a>
+    </footer>
+    <!-- the end footer  -->
 </body>
 </html>
