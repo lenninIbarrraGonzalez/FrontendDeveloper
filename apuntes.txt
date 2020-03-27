@@ -156,3 +156,7 @@ Puedes apreciarlos en las plataformas que visitas todos los días: Twitter, Face
 Recurso para descargar iconos
 https://iconos8.es/
 
+
+
+Documentación de Flexbox
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
