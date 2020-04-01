@@ -34,45 +34,37 @@ body{
 .header__menu li{
     margin: 10px 0px;
 }
-
 .header__menu li a{
     color: white;
     text-decoration: none;
 }
-
 .header__menu li a:hover{
     text-decoration: underline;
 }
 .header__menu--profile{
     margin-right: 8px;
-    /* width: 20px; */
     display: flex;
     align-items: center;
 }
-
 .header__menu--profile img{
     width: 30px;
     height: 30px;
     margin-right: 8px;
 }
-
 .header__menu--profile p{
     margin: 0px;
     color: white;
 }
-
 .main{
     height: 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .main__title{
     color: white;
     font-size: 25px;
 }
-
 .input{
     border: 2px solid white;
     border-radius: 40px;
@@ -85,12 +77,9 @@ body{
     background-color: rgba(255,255,255,0.1);
     outline: none;
 }
-
 ::placeholder{
     color: white;
 }
-
-
 .categories__tittle{
     color: white;
     font-size: 14px;
@@ -98,7 +87,6 @@ body{
     padding-left: 30px;
     width: 100%;
 }
-
 .carousel{
     width: 100%;
     overflow: scroll;
@@ -108,17 +96,12 @@ body{
 }
 
 .carousel__container{
-    /* white-space: nowrap; */
     margin: 70px 0px;
     padding-bottom: 10px;
     padding-left: 20px;
-
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
-    
 }
-
 .carusel-item{
     width: 200px;
     height: 250px;
@@ -126,30 +109,20 @@ body{
     background-color: palegreen;
     overflow: hidden;
     margin: 10px;
-    /* display: inline-block;
-    cursor: pointer;*/
     position: relative; 
 }
-
-/* .carusel-item:hover ~ .carusel-item{
-    transform: translate3d(100 0 0);
-} */
-
 .carousel__container:hover .carusel-item{
     opacity: 0.3;
 }  
-
 .carousel__container:hover .carusel-item:hover{
     transform: scale(1.5);
     opacity: 1;
 } 
-
 .carousel-item__img{
     width: 200px;
     height: 250px;
     object-fit: cover;
 }
-
 .carousel-item__details{
     position: absolute;
     bottom: 0;
@@ -169,3 +142,55 @@ body{
 .carousel-item__details:hover{
     opacity: 1;
 } 
+
+@media only screen and (max-width: 600px){
+
+    .header__img{
+        margin-left: 20px;
+       
+    }
+    .categories__tittle{
+        margin-left: 30px;
+    }
+    
+    .carousel{
+        width: 100%;
+        overflow: scroll;
+        padding: 0px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .carousel__container{
+        /* margin: 20px 0px; */
+        padding-bottom: 10px;
+        /* padding-left: 10px; */
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        
+    }
+   
+    .carusel-item{
+        width: 300px;
+        height: 350px;
+        position: relative;
+    } 
+      
+    .carousel__container:hover{
+        transform: scale(0.9);
+    } 
+    
+    .carousel-item__img{
+        width: 300px;
+        height: 350px;
+        object-fit: cover;
+    }
+    
+     .carousel-item__details{
+        opacity: 1;
+    }
+}
