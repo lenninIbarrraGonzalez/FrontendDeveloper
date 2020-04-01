@@ -63,7 +63,7 @@ body{
     font-family: 'Muli', sans-serif;
 }
 
-.button{
+.button a{
     background-color: rgba(255,255,255,0.1);
     border: none;
     border-radius: 25px;
@@ -75,6 +75,11 @@ body{
     height: 50px;
     letter-spacing: 1px;
     margin: 10px 0px;
+
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 .login__container--return{
     font-size: 16px;
